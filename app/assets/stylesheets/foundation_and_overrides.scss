@@ -114,10 +114,10 @@ $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
 // $jet         : #222222;
-// $black       : #000000;
+$black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: $brown;
+$primary-color: $white;
 // $secondary-color: #e7e7e7;
 $alert-color: #eb7c8f;
 // $success-color: #43AC6A;
@@ -125,8 +125,8 @@ $alert-color: #eb7c8f;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $navy;
-$body-font-color: $skin;
+$body-bg: image-url('bg.png');
+$body-font-color: $white;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -199,23 +199,23 @@ $body-font-color: $skin;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $skin;
+$header-font-color: $white;
 $header-line-height: 1.2;
 $header-top-margin: 0;
-$header-bottom-margin: 4rem;
+$header-bottom-margin: 2rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(132);
-$h2-font-size: rem-calc(52);
-$h3-font-size: rem-calc(36);
+// $h1-font-size: rem-calc(132);
+// $h2-font-size: rem-calc(52);
+// $h3-font-size: rem-calc(36);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(80) !default;
-// $h2-font-reduction: rem-calc(10) !default;
+// $h1-font-reduction: rem-calc(80) !default;
+$h2-font-reduction: rem-calc(14) !default;
 // $h3-font-reduction: rem-calc(5) !default;
 // $h4-font-reduction: rem-calc(5) !default;
 // $h5-font-reduction: 0 !default;
@@ -230,7 +230,7 @@ $h1-font-reduction: rem-calc(80) !default;
 
 // A general <small> styling
 // $small-font-size: 60%;
-$small-font-color: $brown;
+// $small-font-color: $yellow;
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
@@ -620,15 +620,15 @@ $button-bg-color: $primary-color;
 // $form-label-font-size: rem-calc(32);
 // $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
-$form-label-font-color: $brown;
+// $form-label-font-color: $brown;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-$input-font-color: $brown;
+// $input-font-color: $brown;
 $input-font-size: rem-calc(16);
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
-$input-border-color: $skin;
+// $input-border-color: $skin;
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
@@ -980,16 +980,16 @@ $panel-margin-bottom: rem-calc(40);
 // $include-html-pricing-classes: $include-html-classes;
 
 // We use this to control the border color
-$price-table-border: solid 1px $skin;
+// $price-table-border: solid 1px $skin;
 
 // We use this to control the bottom margin of the pricing table
 // $price-table-margin-bottom: rem-calc(20);
 
 // We use these to control the title styles
-$price-title-bg: $skin;
+// $price-title-bg: $skin;
 // $price-title-padding: rem-calc(15 20);
 // $price-title-align: center;
-$price-title-color: $brown;
+// $price-title-color: $brown;
 // $price-title-weight: $font-weight-normal;
 $price-title-size: rem-calc(24);
 // $price-title-font-family: $body-font-family;
@@ -1217,7 +1217,7 @@ $sub-nav-font-color-hover: $white;
 
 // We use these to control the active item styles
 // $sub-nav-active-font-weight: $font-weight-normal;
-$sub-nav-active-bg: $navy;
+// $sub-nav-active-bg: $navy;
 // $sub-nav-active-bg-hover: scale-color($sub-nav-active-bg, $lightness: -14%);
 // $sub-nav-active-color: $white;
 // $sub-nav-active-padding: $sub-nav-padding;
