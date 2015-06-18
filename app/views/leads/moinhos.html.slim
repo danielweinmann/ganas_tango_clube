@@ -15,5 +15,10 @@
       li Confiança em si mesmo
       li Amigos e vida em comunidade
     p Agora o Moinhos tem um espaço autenticamente tanguero para você viver esta cultura no seu melhor.
-  h3 Ligue hoje mesmo e agende uma aula experimental gratuita!
-  h2 51 9904-3244
+  h3 Digite seu nome e email abaixo para saber como transformar sua vida através do tango
+  em Informe seu nome e email abaixo, então clique no botão "Quero saber mais". Depois fique de olho no seu email, pois iremos enviar tudo que você precisa saber sobre o tango por lá.
+  = form_tag subscribers_path
+    = hidden_field_tag 'id', '367de329f4'
+    = text_field_tag 'NAME', nil, placeholder: 'Seu nome', label: 'name'
+    = text_field_tag 'EMAIL', nil, placeholder: 'seu@email.com', label: 'email'
+    = submit_tag "Quero saber mais", class: 'small-12 columns'

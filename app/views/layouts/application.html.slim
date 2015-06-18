@@ -51,4 +51,11 @@ html lang="en"
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+    - for key, msg in flash
+      - unless key == :timedout
+        - key = "success" if key == "notice"
+        - key = "alert" if ["failure", "error"].include?(key)
+        .alert-box.text-center class="#{key}" data-alert="true"
+          = msg
+          a href="#" class="close" &times
     = yield

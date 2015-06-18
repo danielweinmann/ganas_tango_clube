@@ -8,6 +8,7 @@ gem 'pg'
 
 # Controller related
 gem 'responders'
+gem 'gibbon'
 
 # Views and assets
 gem 'foundation-rails'
