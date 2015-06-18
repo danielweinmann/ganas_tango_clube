@@ -2,23 +2,21 @@
   = "Transforme sua vida através do tango"
 - content_for :description do
   = "Você sabia que o tango é uma dança social de improviso? Milhares de pessoas ao redor do mundo vão a milongas, que são os bailes onde acontece a mágica do tango. Saiba mais aqui."
-.content.row.text-center
-  h1= image_tag 'logo.png'
-  h2= content_for :title
-  .text-justify
-    p Você sabia que o tango é uma dança social de improviso? Milhares de pessoas ao redor do mundo vão a milongas, que são os bailes onde acontece a mágica do tango.
-    p Aprender esta arte está ao alcance de qualquer pessoa. Qualquer mesmo! E, além de ser um prazer pra toda a vida, vai te trazer mais:
-    ul.text-left
-      li Sensibilidade na comunicação e nas relações
-      li Conhecimento e desfrute do seu corpo
-      li Diversão e descontração em meio a uma vida cheia
-      li Confiança em si mesmo
-      li Amigos e vida em comunidade
-    p Agora o Moinhos tem um espaço autenticamente tanguero para você viver esta cultura, na Dr. Timóteo passando o Leopoldina Juvenil.
-  h3 Digite seu nome e email abaixo para saber como transformar sua vida através do tango
-  em Informe seu nome e email abaixo, então clique no botão "Quero saber mais". Depois fique de olho no seu email, pois iremos enviar tudo que você precisa saber sobre o tango por lá.
-  = form_tag subscribers_path
-    = hidden_field_tag 'id', '367de329f4'
-    = text_field_tag 'NAME', nil, placeholder: 'Digite seu nome', label: 'name'
-    = text_field_tag 'EMAIL', nil, placeholder: 'digite.seu@email.com', label: 'email'
-    = submit_tag "Quero saber mais", class: 'small-12 columns'
+h2= content_for :title
+.text-justify
+  p Você sabia que o tango é uma dança social de improviso? Milhares de pessoas ao redor do mundo vão a milongas, que são os bailes onde acontece a mágica do tango.
+  p Aprender esta arte está ao alcance de qualquer pessoa. Qualquer mesmo! E, além de ser um prazer pra toda a vida, vai te trazer mais:
+  ul.text-left
+    li Sensibilidade na comunicação e nas relações
+    li Conhecimento e desfrute do seu corpo
+    li Diversão e descontração em meio a uma vida cheia
+    li Confiança em si mesmo
+    li Amigos e vida em comunidade
+  p Agora o Moinhos tem um espaço autenticamente tanguero para você viver esta cultura, na Dr. Timóteo passando o Leopoldina Juvenil.
+h3 Digite seu nome e email abaixo para saber como transformar sua vida através do tango
+em Informe seu nome e email abaixo, então clique no botão "Quero saber mais". Depois fique de olho no seu email, pois iremos enviar tudo que você precisa saber sobre o tango por lá.
+= form_tag subscribers_path
+  = hidden_field_tag 'id', '367de329f4'
+  = text_field_tag 'NAME', nil, placeholder: 'Digite seu nome', label: 'name'
+  = text_field_tag 'EMAIL', nil, placeholder: 'digite.seu@email.com', label: 'email'
+  = submit_tag "Quero saber mais", class: 'small-12 columns'

@@ -1,0 +1,8 @@
+- content_for :title do
+  = "Muito obrigado!"
+- content_for :description do
+  = "Agora é só ficar de olho no seu email, pois iremos enviar tudo que você precisa saber sobre o tango por lá."
+- content_for :external_js do
+  = render 'facebook_conversion'
+h2= content_for :title
+p= content_for :description

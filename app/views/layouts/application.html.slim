@@ -58,4 +58,6 @@ html lang="en"
         .alert-box.text-center class="#{key}" data-alert="true"
           = msg
           a href="#" class="close" &times
-    = yield
+    .content.row.text-center
+      h1= image_tag 'logo.png'
+      = yield
