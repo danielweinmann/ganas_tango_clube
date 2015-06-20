@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
     if params['NAME'].present? && params['EMAIL'].present? && params['EMAIL'] =~ EMAIL_REGEX
       mailchimp = Gibbon::API.new
       begin
-        mailchimp.lists.subscribe({id: params[:id], email: {email: params['EMAIL']}, merge_vars: {:NAME => params['NAME']}, double_optin: false})
+        mailchimp.lists.subscribe({id: params[:id], email: {email: params['EMAIL']}, merge_vars: {:NAME => params['NAME'], :ORIGIN => params['ORIGIN'], :CAMPAIGN => params['CAMPAIGN'], :AD => params['AD'], :NAMESPACE => params['NAMESPACE'], :CONTROLLER => params['CONTROLLER'], :ACTION => params['ACTION'], :LOCALE => params['LOCALE'], :TITLE => params['TITLE'], :TEXT => params['TEXT'], :TEXTMD5 => params['TEXTMD5'], :CALLTOACT => params['CALLTOACT'], :INSTRUCT => params['INSTRUCT'], :BUTTON => params['BUTTON']}, double_optin: false})
       rescue => e
         flash[:alert] = e.message
         return redirect_to :back

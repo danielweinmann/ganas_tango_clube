@@ -22,6 +22,7 @@ html lang="en"
     meta property="fb:app_id" content="425920014241111"
     meta property="fb:admins" content="567237711"
     title== "#{"#{strip_tags(yield :title)} · " if content_for?(:title)} Ganas Tango Clube"
+    script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
     - if content_for? :external_js
