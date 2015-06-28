@@ -60,5 +60,7 @@ html lang="en"
           = msg
           a href="#" class="close" &times
     .content.row.text-center
-      h1= image_tag 'logo.png'
+      h1
+        = link_to :root do
+          = image_tag 'logo.png', title: 'Ganas Tango Clube'
       = yield

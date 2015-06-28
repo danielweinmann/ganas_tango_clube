@@ -5,4 +5,7 @@ class LeadsController < ApplicationController
   def moinhos
   end
 
+  def social
+  end
+
 end
