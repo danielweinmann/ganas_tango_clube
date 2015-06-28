@@ -14,7 +14,7 @@ html lang="en"
       meta property="og:title" content==yield(:title)
       meta property="og:type" content="website"
       meta property="og:url" content=(content_for?(:url) ? yield(:url) : request.url)
-      meta property="og:image" content=="#{request.protocol}#{request.host_with_port}#{image_path("logo_facebook.png")}"
+      meta property="og:image" content==(content_for?(:image_url) ? yield(:image_url) : "#{request.protocol}#{request.host_with_port}#{image_path("logo_facebook.png")}")
       meta property="og:description" content==strip_tags(content_for?(:description) ? yield(:description) : yield(:title))
       meta name="author" content="Laura Rosa & Daniel Weinmann"
     / Metatags for every page
