@@ -1,0 +1,31 @@
+- content_for :title do
+  = "Você sabia que o tango é uma dança social de improviso e não existe só nos palcos e filmes?"
+- content_for :description do
+  = "99,9% das pessoas têm uma visão incompleta do tango e não sabe. Você, provavelmente, já viu este vídeo:"
+h2#lead_title= content_for :title
+#lead_text.text-justify
+  p= content_for :description
+  .flex-video
+    iframe width="600" height="450" src="https://www.youtube.com/embed/NIbJJi9GHms?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen
+  p Existem grandes chances de você já ter visto algo assim:
+  .flex-video
+    iframe width="600" height="450" src="https://www.youtube.com/embed/v246c8wP6_0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen
+  p No entanto, é pouco provável que você já tenha visto uma cena como esta:
+  .flex-video
+    iframe width="600" height="338" src="https://www.youtube.com/embed/ZaOe16Y2WPU?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen
+  p Esta cena se passa em uma <em>milonga</em>. Milhares de pessoas ao redor do mundo frequentam milongas e você talvez não saiba. Centenas de pessoas frequentam milongas <a href="https://www.facebook.com/groups/105131459562829/" target="_blank">em Porto Alegre</a> e você nem imagina.
+  p Milonga, <a href="https://pt.wikipedia.org/wiki/Milonga" target="_blank">entre outras coisas</a>, é o lugar onde se dança tango de improviso, como um baile de salão. Este improviso acontece através da comunicação corporal, e permite que se criem e se sintam coisas incríveis entre um homem e uma mulher!
+  p O tango, na verdade, surgiu na milonga e não nos palcos e filmes. E, até hoje, no coração da milonga se preservam rituais e tradições de uma época em que as relações não aconteciam de forma tão rápida e, por isso, tinham a oportunidade de ser profundas.
+  p Simultaneamente, a milonga proporciona contato olho-no-olho e corpo-a-corpo entre um homem e uma mulher, momentos de silêncio e de conversa, situações em grupo e privadas. Tudo a seu tempo, sem pular etapas, saboreando cada detalhe.
+  p E o melhor é que este estilo de vida está ao alcance de todos. É muito comum conversarmos com alguém que sempre quis dançar tango mas achou que era muito difícil. Normalmente, basta mostrar a diferença acima pra preocupação dar lugar à vontade de bailar!
+  p Se a curiosidade bateu e você quer saber mais sobre este tango social e de improviso, dê um pequeno passo para começar. Vá a uma milonga, aula ou encontro sobre tango. Participe do grupo <a href="https://www.facebook.com/groups/105131459562829/" target="_blank">Tango Porto Alegre</a> no Facebook. Encontre opções nos <a href="http://www.portangoalegre.com.br/" target="_blank">sites</a> sobre <a href="http://portoalegre.tangueros.me/" target="_blank">tango</a> na cidade.
+  p E pra te ajudar a começar, criamos no <a href="http://facebook.com/ganastangoclube" target="_blank">Ganas Tango Clube</a> um encontro pensado para ser o primeiro contato ideal com o tango. São 20 homens e 20 mulheres reunidos pra tomar mate, comer coisas gostosas, conversar, ouvir música, ver dança e aprender sobre tango.
+  p Independente de qual, convidamos você para dar um primeiro passo, começando pequeno. Caso queira saber mais sobre nosso primeiro encontro, é só digitar seu nome e email abaixo e te mandamos tudo que você precisa saber.
+  p Um abraço tanguero,
+  p
+    | Laura Rosa e Daniel Weinmann
+    br
+    em – Bailarinos e professores de tango argentino
+h3#lead_call_to_action Digite seu nome e email abaixo para saber mais sobre o primeiro encontro com o tango no Ganas Tango Clube
+em#lead_instructions Informe seu nome e email abaixo, então clique no botão "Quero saber mais". Depois fique de olho no seu email, pois iremos enviar tudo que você precisa saber por lá.
+= render 'layouts/form'
