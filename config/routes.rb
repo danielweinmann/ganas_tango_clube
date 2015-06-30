@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   get "Você sabia que o tango é uma dança social de improviso".parameterize => "leads#social", as: :leads_social
 
+  get "Primeiro encontro com o tango".parameterize => "offers#first_encounter", as: :offers_first_encounter
+
 end
