@@ -342,7 +342,7 @@ $microformat-fullname-font-weight: $font-weight-normal;
 
 // We use these to control text style.
 // $alert-font-weight: $font-weight-normal;
-// $alert-font-size: rem-calc(13);
+$alert-font-size: rem-calc(20);
 // $alert-font-color: $white;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
@@ -617,10 +617,10 @@ $button-bg-color: $yellow;
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
-// $form-label-font-size: rem-calc(32);
+$form-label-font-size: rem-calc(16);
 // $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
-// $form-label-font-color: $brown;
+$form-label-font-color: $white;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;

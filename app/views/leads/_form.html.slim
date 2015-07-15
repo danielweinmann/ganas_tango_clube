@@ -12,6 +12,6 @@
   = hidden_field_tag 'CALLTOACT'
   = hidden_field_tag 'INSTRUCT'
   = hidden_field_tag 'BUTTON'
-  = text_field_tag 'NAME', nil, placeholder: 'Digite seu nome completo', label: 'name'
-  = text_field_tag 'EMAIL', nil, placeholder: 'digite.seu@email.com', label: 'email'
+  = text_field_tag 'NAME', params[:name], placeholder: 'Digite seu nome completo', label: 'name'
+  = text_field_tag 'EMAIL', params[:email], placeholder: 'digite.seu@email.com', label: 'email'
   = submit_tag "Quero saber mais", class: 'small-12 columns', id: 'lead_button'

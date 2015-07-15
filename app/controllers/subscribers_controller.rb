@@ -5,18 +5,34 @@ class SubscribersController < ApplicationController
   respond_to :html
 
   def create
-    if params['NAME'].present? && params['EMAIL'].present? && params['EMAIL'] =~ EMAIL_REGEX
-      mailchimp = Gibbon::API.new
-      begin
-        mailchimp.lists.subscribe({id: '367de329f4', email: {email: params['EMAIL']}, merge_vars: params.select{|key| key == key.upcase}, double_optin: false, update_existing: true})
-      rescue => e
-        flash[:alert] = e.message
-        return redirect_to :back
-      end    
-    else
-      flash[:alert] = "Você precisa informar seu nome e um email válido para saber mais."
-      return redirect_to :back
+    if !params['NAME'].present?
+      return alert_and_redirect  "Por favor, informe corretamente seu nome."
+    elsif !(params['EMAIL'].present? && params['EMAIL'] =~ EMAIL_REGEX)
+      return alert_and_redirect  "Por favor, informe corretamente seu email."
+    elsif !params['PHONE'].nil?
+      if !params['PHONE'].present?
+        return alert_and_redirect  "Por favor, informe corretamente seu telefone."
+      elsif params['confirm_purchase'] != '1'
+        return alert_and_redirect  "Você precisa confirmar que estará presente no dia do evento para garantir sua vaga."
+      end
     end
+    mailchimp = Gibbon::API.new
+    begin
+      mailchimp.lists.subscribe({id: '367de329f4', email: {email: params['EMAIL']}, merge_vars: params.select{|key| key == key.upcase}, double_optin: false, update_existing: true})
+    rescue => e
+      return alert_and_redirect e.message
+    end
+  end
+
+  private
+
+  def alert_and_redirect(text)
+    form_params = {}
+    form_params[:name] = params['NAME'] if params['NAME'].present?
+    form_params[:email] = params['EMAIL'] if params['EMAIL'].present?
+    form_params[:phone] = params['PHONE'] if params['PHONE'].present?
+    flash[:alert] = text
+    redirect_to "#{request.env["HTTP_REFERER"]}#{request.env["HTTP_REFERER"].include?('?') ? '&' : '?'}#{form_params.to_param}"
   end
 
 end

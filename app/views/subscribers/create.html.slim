@@ -3,6 +3,6 @@
 - content_for :description do
   = "Agora é só ficar de olho no seu email, pois iremos enviar tudo que você precisa saber por lá."
 - content_for :external_js do
-  = render 'facebook_conversion'
+  = render partial: 'facebook_conversion', locals: {conversion_value: params[:conversion_value] || 0.00}
 h2= content_for :title
 p= content_for :description

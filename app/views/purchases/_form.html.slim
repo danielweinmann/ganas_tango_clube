@@ -1,6 +1,10 @@
-= form_tag subscribers_path
-  = text_field_tag 'NAME', nil, placeholder: 'Digite seu nome completo', label: 'name'
-  = text_field_tag 'EMAIL', nil, placeholder: 'digite.seu@email.com', label: 'email'
-  = text_field_tag 'PHONE', nil, placeholder: 'Digite seu telefone', label: 'name'
-  = hidden_field_tag purchase_field, 'true'
-  = submit_tag "Confirmar presença e garantir minha vaga", class: 'small-12 columns', id: 'lead_button'
+.text-left
+  = form_tag subscribers_path
+    = text_field_tag 'NAME', params[:name], placeholder: 'Digite seu nome completo', label: 'name'
+    = text_field_tag 'EMAIL', params[:email], placeholder: 'digite.seu@email.com', label: 'email'
+    = text_field_tag 'PHONE', params[:phone], placeholder: 'Digite seu telefone', label: 'name'
+    = hidden_field_tag 'conversion_value', conversion_value
+    = hidden_field_tag purchase_field, 'true'
+    = check_box_tag 'confirm_purchase'
+    = label_tag 'confirm_purchase', 'Confirmo que quero reservar minha vaga e estarei presente no dia do encontro.', class: 'padding-bottom'
+    = submit_tag "Garantir minha vaga", class: 'small-12 columns', id: 'lead_button'
