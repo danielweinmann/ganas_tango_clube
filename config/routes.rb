@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  root "leads#moinhos"
+  root "leads#index"
   resources :subscribers, only: [:create]
 
-  get "Entenda porque você sente um vazio depois de sair na noite homens".parameterize => "nightlife#male", as: :nightlife_male
-
+  # Leads
   get "Você sabia que o tango é uma dança social de improviso".parameterize => "leads#social", as: :leads_social
 
+  # Offers
   get "Primeiro encontro com o tango".parameterize => "offers#first_encounter", as: :offers_first_encounter
 
 end

@@ -2,7 +2,7 @@ class LeadsController < ApplicationController
   
   respond_to :html
 
-  def moinhos
+  def index
   end
 
   def social
