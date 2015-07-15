@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 "pt-BR":
-  hello: "Hello world"
+  time:
+    formats:
+      text: '%A, dia %-d de %B'

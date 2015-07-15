@@ -23,6 +23,7 @@ gem 'jbuilder'
 gem 'underscore-rails'
 gem 'underscore-string-rails'
 gem 'font-awesome-rails'
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
