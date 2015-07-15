@@ -3,4 +3,4 @@
 h2#lead_call_to_action= content_for :title
 h4 Reserva de vaga para <strong>#{l first_encounter_date, format: :text}</strong>
 em#lead_instructions Informe seu nome, email e telefone abaixo, então clique no botão "Garantir minha vaga". Depois fique de olho no seu email, pois iremos enviar instruções para o dia do encontro por lá.
-= render partial: 'form', locals: {purchase_field: 'PURCHFIRST', conversion_value: first_encounter_price}
+= render partial: 'form', locals: {purchase_field: 'PURCHFIRST', date_field: 'DATEFIRST', date_value: first_encounter_date, conversion_value: first_encounter_price}
