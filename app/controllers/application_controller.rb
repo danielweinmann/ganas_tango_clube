@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
   responders :flash
-  helper_method :namespace, :first_encounter_date, :first_encounter_price
+  helper_method :namespace, :first_encounter_date, :first_encounter_price, :tango_from_zero_date, :tango_from_zero_price
 
   def namespace
     names = self.class.to_s.split('::')
@@ -16,6 +16,14 @@ class ApplicationController < ActionController::Base
 
   def first_encounter_price
     50.0
+  end
+
+  def tango_from_zero_date
+    DateTime.parse("2015-07-25 15:00:00")
+  end
+
+  def tango_from_zero_price
+    100.0
   end
 
 end

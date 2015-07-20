@@ -10,8 +10,10 @@ Rails.application.routes.draw do
 
   # Offers
   get "Primeiro encontro com o tango".parameterize => "offers#first_encounter", as: :offers_first_encounter
+  get "Tango do zero".parameterize => "offers#tango_from_zero", as: :offers_tango_from_zero
 
   # Purchases
   get "Inscrição primeiro encontro com o tango".parameterize => "purchases#first_encounter", as: :purchases_first_encounter
+  get "Inscrição tango do zero".parameterize => "purchases#tango_from_zero", as: :purchases_tango_from_zero
 
 end
