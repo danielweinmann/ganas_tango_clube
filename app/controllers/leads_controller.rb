@@ -8,6 +8,9 @@ class LeadsController < ApplicationController
   def social
   end
 
+  def how_to_start
+  end
+
   def next_events
   end
 

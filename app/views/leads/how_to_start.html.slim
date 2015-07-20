@@ -1,0 +1,30 @@
+- content_for :image_url do
+  = image_url 'how_to_start.png'
+- content_for :title do
+  = "4 dicas simples para você começar a dançar tango sem se sentir perdido(a)"
+- content_for :description do
+  = "Se você acha que o tango é muito difícil ou tem medo de se sentir perdido(a) em uma aula, não se preocupe: você só precisa entender como o aprendizado acontece e como encarar este momento inicial."
+h2#lead_title= content_for :title
+#lead_text.text-justify
+  p= content_for :description
+  p 
+  p É comum se começar a dançar tango frequentando aulas regulares. A pessoa entra em uma turma para iniciantes que já está em andamento e, aos poucos, vai entendendo o que está acontecendo e aprendendo o básico.
+  p O problema é que tem gente que se assusta por ter pego o bonde andando. Ou então que acha que não leva jeito – ou pior, que nunca vai aprender! – ao se comparar com colegas que chegaram antes.
+  p Quem não se assuta, ou quem persiste apesar de tudo, quando se dá conta já está dançando. Para que seu começo seja assim, sem susto, temos 4 dicas simples e poderosas:
+  ol
+    li Antes de mais nada, entenda que se você tiver dificuldades, está tudo bem. Você vai aprender. Nos últimos sete anos presenciamos a iniciação de centenas de homens e mulheres no tango e não encontramos ninguém que não tenha aprendido.
+    li Tenha em mente que quem sabe mais que você um dia – provavelmente há pouco tempo – esteve no seu lugar. Ao invés de se comparar, observe com atenção e descubra como você pode aprender com colegas mais experientes.
+    li Saiba que no tango sempre se volta ao básico. É preciso estar sempre aperfeiçoando nossa caminhada, as trocas de peso, e outros fundamentos. Sendo assim, aquilo que você ainda não viu em aula certamente será visto de novo em algum momento.
+    li E acima de tudo, lembre-se de que você dança para se divertir! É muito fácil esquecer disto, especialmente quando estamos fazendo algo que queremos muito fazer.
+  p Com tudo mais claro, e encarando da forma certa esta iniciação, você já pode começar a participar de aulas regulares e a trilhar seu caminho nesta <a href="#{leads_social_path}?origin=site&campaign=leads_how_to_start&ad=20150720" target="_blank">dança social de improviso</a>.
+  p E pra te ajudar a começar, criamos no <a href="http://facebook.com/ganastangoclube" target="_blank">Ganas Tango Clube</a> o "Tango do zero", um workshop de preparação para aulas regulares, pra quem nunca dançou antes. Vamos te ensinar todos os fundamentos necessários para que você comece a fazer aulas sem se sentir perdido(a).
+  p Seja com aulas regulares ou com nosso workshop de preparação, esperamos que você tenha um lindo começo com o tango! Caso queira saber mais sobre o "Tango do zero", é só digitar seu nome e email abaixo e te mandamos tudo que você precisa saber.
+  p Um abraço tanguero,
+  p
+    | Laura Rosa e Daniel Weinmann
+    br
+    em – Bailarinos e professores de tango argentino, criadores do <a href=#{root_path} target="_blank">Ganas Tango Clube</a>
+h3#lead_call_to_action Digite seu nome e email abaixo para saber mais sobre o "Tango do zero" no Ganas Tango Clube
+em#lead_instructions Informe seu nome e email abaixo, então clique no botão "Quero saber mais". Depois fique de olho no seu email, pois iremos enviar tudo que você precisa saber por lá.
+= render 'form'
+div class="fb-comments" data-href="http://ganas.com.br/4-dicas-simples-para-voce-comecar-a-dancar-tango" data-width="100%" data-numposts="5" data-colorscheme="dark"
