@@ -14,4 +14,7 @@ class LeadsController < ApplicationController
   def next_events
   end
 
+  def jornal_do_almoco
+  end
+
 end
