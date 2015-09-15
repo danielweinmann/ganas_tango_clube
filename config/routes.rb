@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "4 dicas para você começar a dançar tango".parameterize => "leads#how_to_start", as: :leads_how_to_start
   get "Próximos eventos".parameterize => "leads#next_events", as: :leads_next_events
   get "Jornal do almoço".parameterize => "leads#jornal_do_almoco", as: :leads_jornal_do_almoco
+  get "Jornal da Globo".parameterize => "leads#jornal_da_globo", as: :leads_jornal_da_globo
 
   # Offers
   get "Primeiro encontro com o tango".parameterize => "offers#first_encounter", as: :offers_first_encounter

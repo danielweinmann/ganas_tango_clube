@@ -17,4 +17,7 @@ class LeadsController < ApplicationController
   def jornal_do_almoco
   end
 
+  def jornal_da_globo
+  end
+
 end
