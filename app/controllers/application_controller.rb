@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def first_encounter_date
-    DateTime.parse("2015-09-18 20:00:00")
+    DateTime.parse("2015-10-30 20:00:00")
   end
 
   def first_encounter_price
