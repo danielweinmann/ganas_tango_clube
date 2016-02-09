@@ -1,9 +1,9 @@
+- content_for :facebook_standard_event do
+  == @facebook_standard_event
 - content_for :title do
   = "Muito obrigado!"
 - content_for :description do
   = "Agora é só ficar de olho no seu email, pois vamos enviar tudo que você precisa saber por lá."
-- content_for :external_js do
-  = render partial: 'facebook_conversion', locals: {conversion_value: params[:conversion_value] || 0.00}
 h2= content_for :title
 p= content_for :description
 p Importante: às vezes nossos emails podem cair na sua caixa de <em>SPAM</em>, ou de <em>Promoções</em>. Caso você não encontre nosso email nos próximos minutos, verifique se não está em uma destas caixas.

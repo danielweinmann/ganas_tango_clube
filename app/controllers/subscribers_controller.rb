@@ -22,6 +22,11 @@ class SubscribersController < ApplicationController
     rescue => e
       return alert_and_redirect e.message
     end
+    if params[:conversion_value].present?
+      @facebook_standard_event = "fbq('track', 'Purchase', {value: '#{ format('%.2f', params[:conversion_value]) }', currency: 'BRL'});"
+    else
+      @facebook_standard_event = "fbq('track', 'CompleteRegistration');"
+    end
   end
 
   private
