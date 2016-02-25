@@ -7,5 +7,5 @@
     = hidden_field_tag purchase_field, 'true'
     = hidden_field_tag date_field, date_value
     = check_box_tag 'confirm_purchase'
-    = label_tag 'confirm_purchase', 'Confirmo que quero reservar minha vaga e estarei presente no dia do evento.', class: 'padding-bottom'
-    = submit_tag "Garantir minha vaga", class: 'small-12 columns', id: 'lead_button'
+    = label_tag 'confirm_purchase', "#{defined?(confirm_text) ? confirm_text : 'Confirmo que quero reservar minha vaga e estarei presente no dia do evento.'}", class: 'padding-bottom'
+    = submit_tag "#{defined?(submit_text) ? submit_text : 'Garantir minha vaga'}", class: 'small-12 columns', id: 'lead_button'

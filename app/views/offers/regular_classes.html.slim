@@ -1,0 +1,46 @@
+- content_for :facebook_standard_event do
+  == "fbq('track', 'Lead');"
+- content_for :image_url do
+  = image_url 'regular_classes.jpg'
+- content_for :title do
+  = "Aulas regulares no Ganas Tango Clube"
+- content_for :description do
+  = "Conheça nossas opções de aulas regulares de tango. Pra quem quer começar ou seguir se aperfeiçoando cada vez mais!"
+h2#lead_title= content_for :title
+#lead_text.text-justify
+  p Se você chegou até aqui é porque já conhece o #{link_to 'Ganas Tango Clube', root_path, target: :_blank}. Talvez você até já tenha participado do #{link_to 'Tango do zero', offers_tango_from_zero_path, target: :_blank} :) e agora você está querendo começar a fazer aulas regulares. Conheça nossas opções:
+
+  h3 Turmas para iniciantes
+  p As turmas para iniciantes são ideais para quem quer começar. Siga nossas <a href="#{leads_how_to_start_path}?origin=site&campaign=offers_regular_classes&ad=20160225" target="_blank">4 dicas para você começar a dançar tango sem se sentir perdido</a> e divirta-se!
+  ul
+    li <strong>Segundas e quartas</strong>, das <strong>18h</strong> às 19h
+    li <strong>Segundas e quartas</strong>, das <strong>21h</strong> às 22h
+    li <strong>Terças e quintas</strong>, das <strong>19h</strong> às 20h nas terças e das <strong>19h30</strong> às 20h30 nas quintas
+  h3 Turma para intermediários
+  p Nossa turma de intermediários é recomendada para quem tem pelo menos 6 meses de tango. Pra te deixar cada vez bailando mais e melhor!
+  ul
+    li <strong>Segundas e quartas</strong>, das <strong>19h30</strong> às 20h30
+  h3 Novas turmas e eventos pontuais
+  p Não pode nestes horários? <a href="#{leads_next_events_path}?origin=site&campaign=offers_regular_classes&ad=20160225" target="_blank">Clique aqui</a> para ficar sabendo de novas turmas e outros eventos.
+  h3 Onde?
+  p No <a href="https://www.facebook.com/ganastangoclube" target="_blank">Ganas Tango Clube</a>, na rua Dr. Timóteo, 591. Pertinho do Leopoldina Juvenil. Temos estacionamento interno!
+  h3 Como funciona?
+  p Você pode fazer quantas vezes por semana quiser, e não precisa ser sempre nos mesmos horários. Caso você não possa vir num dia que você costuma vir, é só vir em outro. Não precisa nem avisar :)
+  h3 Quanto?
+  ul
+    li <strong>1x</strong> por semana · <strong>R$ 120</strong>/mês por pessoa
+    li <strong>2x</strong> por semana · <strong>R$ 160</strong>/mês por pessoa
+    li <strong>3x</strong> por semana · <strong>R$ 210</strong>/mês por pessoa
+    li <strong>4x</strong> por semana · <strong>R$ 240</strong>/mês por pessoa
+  p Não cobramos matrícula.
+  h3 Perguntas frequentes
+  ul
+    li <strong>Preciso levar par?</strong> Não precisa. Vem!
+    li <strong>Não sei dançar, posso ir igual?</strong> Sim :) <a href="#{leads_how_to_start_path}?origin=site&campaign=offers_regular_classes&ad=20160225" target="_blank">estas dicas</a> vão te ajudar a começar.
+    li <strong>É preciso fazer o #{link_to 'Tango do zero', offers_tango_from_zero_path, target: :_blank} antes de começar?</strong> Não. Vai te ajudar se você fizer, mas não deixe de começar caso não possa fazê-lo agora.
+    li <strong>Quantas vezes por semana devo fazer?</strong> A maioria das pessoas faz 2x por semana, mas tem muita gente que faz 1x e aprende super bem. Mais do que isso é para os aficionados!
+    li <strong>Com que roupa devo ir?</strong> Venha com roupas confortáveis. Traga sapatos de dança ou qualquer calçado que seja confortável e deslize/não grude no chão.
+  h3 Dúvidas?
+  p É só ligar para 51 9904-3244, escrever para #{ mail_to 'contato@ganas.com.br' } ou entrar em contato pela nossa <a href="https://www.facebook.com/ganastangoclube" target="_blank">página no Facebook</a>.
+h3.padding-top Faça uma aula experimental gratuita!
+a.button href=(purchases_regular_classes_path) Quero fazer uma aula experimental gratuita
