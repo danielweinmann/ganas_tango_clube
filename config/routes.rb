@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "Próximos eventos".parameterize => "leads#next_events", as: :leads_next_events
   get "Jornal do almoço".parameterize => "leads#jornal_do_almoco", as: :leads_jornal_do_almoco
   get "Jornal da Globo".parameterize => "leads#jornal_da_globo", as: :leads_jornal_da_globo
+  get "O que o tango me ensinou sobre ser homem".parameterize => "leads#man", as: :leads_man
 
   # Offers
   get "Primeiro encontro com o tango".parameterize => "offers#first_encounter", as: :offers_first_encounter

@@ -1,0 +1,37 @@
+- content_for :facebook_standard_event do
+  == "fbq('track', 'ViewContent');"
+- content_for :image_url do
+  = image_url 'man_03.jpg'
+- content_for :author do
+  = "Lucas Weinmann"
+- content_for :title do
+  = "O que o tango me ensinou sobre ser homem"
+- content_for :description do
+  = "Enquanto aprendia a dançar, acabei aprendendo muito sobre o que significa ser homem. Minha evolução se deu aos poucos, quase sem eu notar, mas hoje eu sinto claramente a diferença, dentro e fora da pista de dança."
+h2#lead_title= content_for :title
+#lead_text.text-justify
+  p Por Lucas Weinmann
+  p O tango me pegou. Foi uma dessas coisas na vida da gente que vêm como um mergulho. Algumas semanas se passam e quando a gente se dá conta está saindo pra dançar três, quatro, cinco vezes por semana. O tango que me pegou foi o tango salón. <a href="#{leads_social_path}?origin=site&campaign=leads_man&ad=20160229" target="_blank">Bailado de improviso</a> nas milongas de Buenos Aires desde o início do século XX, esse estilo teve seu auge na década de 1940 e ainda hoje a estrutura dos bailes remonta àqueles costumes, em um cenário contemporâneo.
+  p No tango, têm dois papéis preestabelecidos: condutor e seguidora. Um bom condutor comunica à seguidora para onde está indo, com clareza e segurança. Só que usando o corpo. Enquanto aprendia a dançar, acabei aprendendo muito sobre o que significa ser homem. Minha evolução se deu aos poucos, quase sem eu notar, mas hoje eu sinto claramente a diferença, dentro e fora da pista de dança. Por isso mesmo quero compartilhar com vocês as três coisas mais importantes que aprendi com o tango até agora.
+  h3 1. Mais vale um erro confiante que um acerto duvidoso
+  .image= image_tag 'man_01.jpg'
+  p O tango ensina que é muito bom ter disciplina e praticar. Que se eu fiz o meu trabalho, tenho condições de bancar as minhas decisões, sabendo que vou proporcionar uma boa dança, tanto para mim quanto para a mulher. Mais do que isso, o tango me conecta com minha capacidade de capitanear, de tomar decisões sem duvidar de mim mesmo. Sem isso, o baile fica indeciso, frouxo e pouco prazeroso.
+  p Isso não significa que, eventualmente, as coisas não deem errado. Até os melhores condutores precisam lidar com esses “soluços” na dança. Mas bancar as suas decisões significa aceitar com tranquilidade o resultado delas. O tango me faz sentir na pele que se algo que eu tentei não deu certo, o melhor a fazer é seguir em frente. Sem parar pra me lamentar, sem me culpar por isso e nem colocar a culpa na parceira. A maneira mais rápida de transformar um erro em um acerto é continuar em movimento. Segue o baile, literalmente.
+  h3 2. A arte de abraçar uma mulher
+  .image= image_tag 'man_02.jpg'
+  p Dá pra dizer que a alma do tango é o abraço. Enquanto no mundo “lá fora” os abraços são reservados para as pessoas mais próximas, no salão o abraço é o primeiro contato entre duas pessoas. Conhecer alguém através do corpo (e não da conversa, por exemplo) é inexplicável: só quem teve essa experiência sabe. E mais pessoas deveriam saber disso.
+  p Confesso que, no início, foi difícil me entregar ao abraço tangueiro. Tinha medo de ser mal interpretado. O roçar do peito de uma mulher desconhecida contra o meu, por exemplo, era constrangedor. Mas não demorou para a vergonha dar lugar ao conforto e eu começar a realmente desfrutar do abraço. Hoje sei projetar impressões nas mulheres apenas abraçando. E além de proporcionar uma experiência de dança muito prazerosa para a mulher, a tranquilidade e segurança que ganhei são extremamente potentes quando aplicadas à vida lá fora.
+  h3 3. Se cuidar não é frescura
+  .image= image_tag 'man_03.jpg'
+  p O tango me ajudou a encarar a vaidade masculina com outros olhos. Hoje vejo com naturalidade o ato de usar camisa e sapato em momentos de descontração, por exemplo. Além disso, o asseio corporal ganhou mais importância na minha vida. Não precisa ser nenhum James Bond pra fazer uma boa figura, basta cuidar de si.
+  p O abraço tangueiro exige contato muito próximo, por isso é importante estar de banho tomado, com bom hálito, usando desodorante e perfume na medida certa. Para mim, essa disciplina com o corpo veio de dentro para fora: ninguém te ensina a se cuidar, os cuidados partem de ti. Mas o melhor é o prazer de estar cheiroso e arrumado, de sentir o efeito que isso provoca nas outras pessoas. Aprendi que essa "vaidade" não tem nada de frescura, pelo contrário: além de transmitir poder e elegância, isso é algo natural no homem, embora às vezes a gente esqueça.
+  h3
+    hr
+  p A motivação pra escrever este texto veio quando me dei conta, trabalhando em um novo projeto, que estou constantemente em contato com essas novas habilidades que ganhei com o tango. A calma e a capacidade de planejamento mais aguçadas que me permitiram assumir riscos para abrir meu novo negócio, por exemplo, foram coisas que aprendi na pista de baile.
+  p O tango me ensinou que ser homem é ter coragem e agir, é ser decidido e respeitoso, resoluto mas compreensivo, forte mas generoso. Como sempre, segue o baile, e a cada dança eu vou me tornando um homem mais e mais tangueiro.
+  em
+    p Lucas Weinmann é arquiteto e aluno do #{link_to 'Ganas Tango Clube', root_path, target: :_blank}.
+    p Deu vontade de saber mais? A gente te ajuda a entrar em contato com este mundo! É só digitar seu nome e email no formulário abaixo.
+h3#lead_call_to_action Quer saber mais?
+em#lead_instructions É só digitar seu nome e email abaixo e depois clicar no botão "Quero saber mais".
+= render 'form'

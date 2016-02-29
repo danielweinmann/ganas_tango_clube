@@ -1,7 +1,7 @@
 - content_for :facebook_standard_event do
   == "fbq('track', 'InitiateCheckout');"
 - content_for :title do
-  = "Faça uma aula experimental gratuita"
+  = "Quer fazer uma aula experimental gratuita?"
 h2#lead_call_to_action= content_for :title
-em#lead_instructions Informe seu nome, email e telefone abaixo, então clique no botão "Quero fazer uma aula experimental gratuita". Depois fique de olho no seu email, pois vamos enviar instruções por lá.
-= render partial: 'form', locals: {purchase_field: 'PURCHREG', date_field: 'DATEREG', date_value: DateTime.now.to_date, conversion_value: 0.0, confirm_text: 'Confirmo que quero fazer uma aula experimental gratuita.', submit_text: 'Quer fazer uma aula experimental gratuita'}
+em#lead_instructions É só informar seu nome, email e telefone abaixo e depois clicar no botão "Quero fazer uma aula experimental gratuita".
+= render partial: 'form', locals: {purchase_field: 'PURCHREG', date_field: 'DATEREG', date_value: DateTime.now.to_date, conversion_value: 0.0, confirm_text: 'Confirmo que quero fazer uma aula experimental gratuita.', submit_text: 'Quero fazer uma aula experimental gratuita'}

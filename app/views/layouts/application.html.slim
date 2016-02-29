@@ -16,7 +16,7 @@ html lang="en"
       meta property="og:url" content=(content_for?(:url) ? yield(:url) : request.url)
       meta property="og:image" content==(content_for?(:image_url) ? yield(:image_url) : "#{request.protocol}#{request.host_with_port}#{image_path("logo_facebook.png")}")
       meta property="og:description" content==strip_tags(content_for?(:description) ? yield(:description) : yield(:title))
-      meta name="author" content="Laura Rosa & Daniel Weinmann"
+      meta name="author" content=(content_for?(:author) ? yield(:author) : "Laura Rosa & Daniel Weinmann")
     / Metatags for every page
     meta property="og:site_name" content="Ganas Tango Clube"
     meta property="fb:app_id" content="425920014241111"

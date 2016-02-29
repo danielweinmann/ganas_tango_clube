@@ -1,8 +1,8 @@
 - content_for :facebook_standard_event do
   == "fbq('track', 'InitiateCheckout');"
 - content_for :title do
-  = "Garanta sua vaga na próxima edição do Tango do zero"
+  = "Quer garantir sua vaga no Tango do zero?"
 h2#lead_call_to_action= content_for :title
 h4 Reserva de vaga para <strong>#{l tango_from_zero_date, format: :text}</strong>
-em#lead_instructions Informe seu nome, email e telefone abaixo, então clique no botão "Garantir minha vaga". Depois fique de olho no seu email, pois vamos enviar instruções para o dia do workshop por lá.
+em#lead_instructions É só informar seu nome, email e telefone abaixo e depois clicar no botão "Garantir minha vaga".
 = render partial: 'form', locals: {purchase_field: 'PURCHZERO', date_field: 'DATEZERO', date_value: tango_from_zero_date, conversion_value: tango_from_zero_price}
