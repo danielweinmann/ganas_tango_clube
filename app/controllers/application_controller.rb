@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
   end
 
   def tango_from_zero_date
-    DateTime.parse("2016-03-05 15:00:00")
+    DateTime.parse("2016-04-02 15:00:00")
   end
 
   def tango_from_zero_price
