@@ -3,20 +3,23 @@
 - content_for :image_url do
   = image_url 'jornal_do_almoco.png'
 - content_for :title do
-  = "Jornal do almoço: Cultura portenha invade Porto Alegre"
+  = "Sabia que dá pra sair pra dançar tango em Porto Alegre quase todo dia?"
 - content_for :description do
-  = "O Jornal do Almoço exibiu uma matéria de 7 minutos sobre o tango em Porto Alegre. Clique para assistir na íntegra."
+  = "Existe uma cultura de tango vibrante na noite de Porto Alegre e o Jornal do Almoço fez uma matéria bem bonita sobre esse fenômeno."
 h2#lead_title= content_for :title
 #lead_text.text-justify
-  p O Jornal do Almoço exibiu uma matéria de 7 minutos sobre o fenômeno do tango em Porto Alegre. E o Ganas Tango Clube não podia deixar de estar lá! Olha só:
+  p Existe uma cultura de tango vibrante na noite de Porto Alegre e o Jornal do Almoço fez uma matéria bem bonita sobre esse fenômeno. Como não podia deixar de ser, o Ganas Tango Clube tem lugar de honra nessa história! Olha só:
   .flex-video
     iframe width="560" height="315" src="https://www.youtube.com/embed/B8q4os7Au8M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen
-  p Se você ficou com vontade de conhecer todo este tango que Porto Alegre oferece, o <a href="http://facebook.com/ganastangoclube" target="_blank">Ganas Tango Clube</a> pode ser um ótimo ponto de partida. Para saber mais, é só digitar seu nome e email abaixo e a gente te ajuda a entrar em contato com este mundo!
+  p Ficou com vontade de fazer parte desse mundo? A gente te ajuda!
+  p Se você tem ganas de aprender, o <a href="http://facebook.com/ganastangoclube" target="_blank">Ganas Tango Clube</a> é um ótimo ponto de partida nesta jornada tanguera. Estamos situados no coração do Moinhos de Vento e somos especialistas em ensinar tango pra quem nunca dançou.
+  p Uma vez por mês oferecemos o Tango do zero, um workshop de uma tarde onde você aprende tudo o que precisa pra começar a fazer aulas sem <a href="#{leads_how_to_start_path}?origin=site&campaign=leads_jornal_do_almoco&ad=20160423" target="_blank">se sentir perdido</a>.
+  p Pra receber todas as informações sobre o próximo Tango do zero é só digitar seu nome e email aí embaixo!
   p Um abraço tanguero,
   p
     | Laura Rosa e Daniel Weinmann
     br
     em – Bailarinos e professores de tango argentino, criadores do <a href=#{root_path} target="_blank">Ganas Tango Clube</a>
-h3#lead_call_to_action Quer saber mais?
+h3#lead_call_to_action Quer saber mais sobre o Tango do zero?
 em#lead_instructions É só digitar seu nome e email abaixo e depois clicar no botão "Quero saber mais".
 = render 'form'
